@@ -10,7 +10,7 @@ my (
     $orig_master_port, $new_master_host, $new_master_ip,    $new_master_port  
 );  
   
-my $vip = '10.32.108.202/24';  
+my $vip = 'yourip/yournetmask';  
 my $key = '3';
 my $gateway = `echo $vip | /bin/awk -F '.' '{printf \$1"."\$2"."\$3".1"}'`;
 my $vip_new=`echo $vip | /bin/awk -F '/' '{printf \$1}'`;
