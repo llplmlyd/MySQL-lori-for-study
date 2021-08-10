@@ -27,6 +27,8 @@ SET global ENFORCE_GTID_CONSISTENCY = OFF;
 ```
 - if you want to turn off gtid forever, remenber to delete or comment out gtid related parameters.
 
+
 [reference]
+
 https://dev.mysql.com/doc/refman/5.7/en/replication-mode-change-online-enable-gtids.html
 https://dev.mysql.com/doc/refman/5.7/en/replication-mode-change-online-disable-gtids.html
