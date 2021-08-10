@@ -1,4 +1,6 @@
  - on slave: stop replication.
+ > the `master_log_file` and `master_log_pos` can be gotten from the slave status.
+ After you stop slave, you can `show slave status`,then record the values of `Relay_Master_Log_File` and `Exec_Master_Log_Pos` which is used in the "Change..." statement.
 ```
  stop slave;
  change master to master_auto_position=0,master_log_file='xxxxfile',master_log_pos=xxx;
